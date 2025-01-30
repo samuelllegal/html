@@ -18,60 +18,129 @@ Referência oficial: [https://developer.mozilla.org/pt-BR/docs/Web/HTML](MDN Web
 </body>
 </html>
 ```
-## Tags de metadados (no <head>)
-`<title>`: Define o título da página (aparece na aba do navegador).
-`<meta>`: Fornece metadados, como charset e viewport:
-    `<meta charset="UTF-8">`: Define a codificação de caracteres.
-    `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Torna a página responsiva em dispositivos móveis.
-`<link>`: Vincula arquivos externos, como CSS:
+## Tags de metadados (no `<head>`)
+`<title>` : Define o título da página (aparece na aba do navegador)
+
+`<meta>` : Fornece metadados, como charset e viewport
+
+`<meta charset="UTF-8">` Define a codificação de caracteres
+
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">` Torna a página responsiva em dispositivos móveis
+
+`<link>`: Vincula arquivos externos, como CSS
+
+`<script>`: Adiciona ou referencia scripts JavaScript.
+
+```HTML
+<meta charset="UTF-8">
+```
+
+```HTML
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+    
+
 ```HTML
 <link rel="stylesheet" href="estilo.css">
 ```
-`<script>`: Adiciona ou referencia scripts JavaScript.
-```
+
+```HTML
 <script src="script.js"></script>
 ```
 
 ## Estrutura de texto:
-Cabeçalhos:
-    Títulos: `<h1>` até `<h6>`
-Parágrafos: 
-    Parágrafo: `<p>`
-Formatos de texto:
-    `<strong>`: Destaca texto com importância (normalmente em negrito).
-    `<em>`: Texto com ênfase (normalmente em itálico).
-    `<b>`: Texto em negrito sem importância semântica.
-    `<i>`: Texto em itálico sem importância semântica.
-    `<mark>`: Destaca texto com fundo amarelo.
-    `<u>`: Texto sublinhado.
-    `<small>`: Texto menor.
-    `<del>`: Texto riscado.
-    `<ins>`: Texto inserido, geralmente sublinhado.
-    `<br>`: Quebra de linha.
-    `<hr>`: Linha horizontal.
+### Cabeçalhos:
+
+Títulos: `<h1>` até `<h6>`
+
+### Parágrafos: 
+
+Parágrafo: `<p>`
+
+### Formatos de texto:
+
+`<strong>`: Destaca texto com importância (normalmente em negrito).
+
+`<em>`: Texto com ênfase (normalmente em itálico).
+
+`<b>`: Texto em negrito sem importância semântica.
+
+`<i>`: Texto em itálico sem importância semântica.
+
+`<mark>`: Destaca texto com fundo amarelo.
+
+`<u>`: Texto sublinhado.
+
+`<small>`: Texto menor.
+
+`<del>`: Texto riscado.
+
+`<ins>`: Texto inserido, geralmente sublinhado.
+
+`<br>`: Quebra de linha.
+
+`<hr>`: Linha horizontal.
 
 ## Links e imagens:
 Link: `<a href="https://exemplo.com">`Texto do link`</a>`
+
+```HTML
+<a href="#">`Texto do link`</a>
+```
+
 Imagem: `<img src="imagem.jpg" alt="Descrição da imagem">`
+
+```HTML
+<img src="imagem.jpg" alt="Descrição da imagem">
+```
 
 ## Listas:
 Ordenada: `<ol>`
+
 Não ordenada: `<ul>`
+
 Itens: `<li>`
+
 Lista de descrição: `<dl>`
-    Título da descrição: `<dt>`
-    Detalhe da descrição: `<dd>`
+
+Título da descrição: `<dt>`
+    
+Detalhe da descrição: `<dd>`
 
 ## Tabelas
 Cria tabelas: `<table>`
+
 Define uma linha: `<tr>`
+
 Define um cabeçalho de coluna: `<th>`
+
 Define uma célula: `<td>`
+
 Adiciona um título para a tabela: `<caption>`
 
 ## Trabalhe com formulários
+`<form>`: Contém elementos de formulário
+    
+`<input>`: Campos de entrada (texto, senha, email, etc.)
+    
+Tipos mais comuns: `text`, `email`, `password`, `submit`, `radio`, `checkbox`, `file`, etc
+    
+`<textarea>`: Área de texto para múltiplas linhas
+    
+`<button>`: Botão clicável
+    
+`<label>`: Rotula um campo do formulário
+    
+`<select>`: Caixa de seleção (dropdown)
+    
+`<option>`: Opções dentro de `<select>`
+    
+`<fieldset>`: Agrupa elementos do formulário
+    
+`<legend>`: Adiciona uma legenda para o <fieldset>
+
 ### Criação de formulários básicos:
-```
+```HTML
 <form action="/enviar" method="post">
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome">
@@ -102,6 +171,33 @@ Principais elementos: `<input>`, `<textarea>`, `<button>`, `<select>`, `<option>
 ## Semântica:
 Use tags como `<header>`, `<footer>`, `<article>`, `<section>`, `<nav>`, `<aside>` para organizar o conteúdo.
 
+`<header>`: Cabeçalho da página ou seção
+    
+`<nav>`: Menu de navegação
+    
+`<main>`: Conteúdo principal da página
+    
+`<section>`: Seção de conteúdo relacionada
+    
+`<article>`: Conteúdo independente (ex.: post de blog)
+    
+`<aside>`: Conteúdo relacionado, como barras laterais
+    
+`<footer>`: Rodapé da página ou seção
+
+## Elementos interativos
+`<details>`: Cria uma seção de detalhes expansível
+    
+`<summary>`: Título visível de um <details>
+    
+`<dialog>`: Cria uma caixa de diálogo (popup)
+
+## Outras tags úteis
+`<div>`: Container genérico para agrupar elementos
+    
+`<span>`: Container inline para estilizar ou agrupar texto
+
+`<iframe>`: Incorpora outro documento HTML dentro da página
 
 ## APIs do HTML5
 ### Canvas: Para criar gráficos e animações.
