@@ -95,17 +95,65 @@ Imagem: `<img src="imagem.jpg" alt="Descrição da imagem">`
 ```
 
 ## Listas:
-Ordenada: `<ol>`
+Ordenada: `<ol type="A">`
 
-Não ordenada: `<ul>`
+`1` (padrão) → 1, 2, 3...
+
+`A` → A, B, C...
+
+`a` → a, b, c...
+
+`I` → I, II, III...
+
+`i` → i, ii, iii...
+
+```HTML
+<ol>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+```
+
+Não ordenada: `<ul style="list-style-type: disc;">`
+
+`disc` (padrão) → ●
+
+`circle` → ○
+
+`square` → ■
+
+`none` → Remove os marcadores.
+
+```HTML
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+```
 
 Itens: `<li>`
 
-Lista de descrição: `<dl>`
+Define a lista: `<dl>`
 
-Título da descrição: `<dt>`
+Define o termo: `<dt>`
     
-Detalhe da descrição: `<dd>`
+Define a descrição do termo: `<dd>`
+
+```HTML
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para criar páginas web.</dd>
+
+    <dt>CSS</dt>
+    <dd>Linguagem para estilizar páginas web.</dd>
+
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para tornar as páginas interativas.</dd>
+</dl>
+
+```
 
 ## Tabelas
 Cria tabelas: `<table>`
