@@ -156,15 +156,74 @@ Define a descrição do termo: `<dd>`
 ```
 
 ## Tabelas
+### basico
+```HTML
+<table border="1">
+    <tr>
+        <th>Cabeçalho 1</th>
+        <th>Cabeçalho 2</th>
+    </tr>
+    <tr>
+        <td>Dado 1</td>
+        <td>Dado 2</td>
+    </tr>
+    <tr>
+        <td>Dado 4</td>
+        <td>Dado 5</td>
+    </tr>
+</table>
+```
 Cria tabelas: `<table>`
 
-Define uma linha: `<tr>`
-
 Define um cabeçalho de coluna: `<th>`
+
+Define uma linha: `<tr>`
 
 Define uma célula: `<td>`
 
 Adiciona um título para a tabela: `<caption>`
+
+Define o cabeçalho da tabela: `<thead>`
+
+Define o corpo principal da tabela: `<tbody>`
+
+Define o rodapé da tabela: `<tfoot>`
+
+### completo
+```HTML
+<table border="1">
+    <caption>Relatório de Vendas</caption>
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Celular</td>
+            <td>R$ 1500</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Notebook</td>
+            <td>R$ 3500</td>
+            <td>5</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Total</td>
+            <td>15</td>
+        </tr>
+    </tfoot>
+</table>
+```
+
+Mesclar colunas: `colspan`
+
+Mesclar linhas: `rowspan`
 
 ## Trabalhe com formulários
 `<form>`: Contém elementos de formulário
