@@ -226,9 +226,65 @@ Mesclar colunas: `colspan`
 Mesclar linhas: `rowspan`
 
 ## Trabalhe com formulários
+### simples
+```HTML
+<form action="processar.php" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    
+    <button type="submit">Enviar</button>
+</form>
+```
+
 `<form>`: Contém elementos de formulário
+
+`action`: Define o arquivo que receberá os dados do formulário.
+
+`method`: Define o método de envio (GET ou POST).
+
+`target`: Define onde abrir a resposta (_self, _blank, _parent, _top).
+
+`enctype`: Define o tipo de codificação para envio de arquivos.
+
+`novalidate`: Desativa a validação padrão do HTML.
     
 `<input>`: Campos de entrada (texto, senha, email, etc.)
+
+`<input type="text" name="nome" placeholder="Digite seu nome">`
+
+`<input type="email" name="email" placeholder="Digite seu email">`
+
+`<input type="password" name="senha" placeholder="Digite sua senha">`
+
+`<input type="number" name="idade" min="1" max="100">`
+
+`<input type="date" name="data_nascimento">`
+
+`<input type="checkbox" name="aceito_termos">` Aceito os termos
+
+`<input type="radio" name="genero" value="M">` Masculino
+
+`<input type="radio" name="genero" value="F">` Feminino
+
+`<input type="file" name="arquivo">`
+
+`<input type="submit" value="Enviar">`
+
+### validação de formulários
+
+`required`: Campo obrigatório.
+
+`minlength="x"`: Mínimo de caracteres permitidos.
+
+`maxlength="x"`: Máximo de caracteres permitidos.
+
+`pattern="[A-Za-z]{3,}"`: Expressão regular para validar o formato.
+
+```HTML
+<input type="text" name="nome" required minlength="3" maxlength="20">
+<input type="email" name="email" required>
+<input type="password" name="senha" required pattern="[A-Za-z0-9]{6,}">
+```
     
 Tipos mais comuns: `text`, `email`, `password`, `submit`, `radio`, `checkbox`, `file`, etc
     
@@ -239,6 +295,13 @@ Tipos mais comuns: `text`, `email`, `password`, `submit`, `radio`, `checkbox`, `
 `<label>`: Rotula um campo do formulário
     
 `<select>`: Caixa de seleção (dropdown)
+```HTML
+<select id="cidade" name="cidade">
+    <option value="SP">São Paulo</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="MG">Minas Gerais</option>
+</select>
+```
     
 `<option>`: Opções dentro de `<select>`
     
