@@ -1,0 +1,85 @@
+simples
+<form action="processar.php" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    
+    <button type="submit">Enviar</button>
+</form>
+<form>: Contém elementos de formulário
+
+action: Define o arquivo que receberá os dados do formulário.
+
+method: Define o método de envio (GET ou POST).
+
+target: Define onde abrir a resposta (_self, _blank, _parent, _top).
+
+enctype: Define o tipo de codificação para envio de arquivos.
+
+novalidate: Desativa a validação padrão do HTML.
+
+<input>: Campos de entrada (texto, senha, email, etc.)
+
+<input type="text" name="nome" placeholder="Digite seu nome">
+
+<input type="email" name="email" placeholder="Digite seu email">
+
+<input type="password" name="senha" placeholder="Digite sua senha">
+
+<input type="number" name="idade" min="1" max="100">
+
+<input type="date" name="data_nascimento">
+
+<input type="checkbox" name="aceito_termos"> Aceito os termos
+
+<input type="radio" name="genero" value="M"> Masculino
+
+<input type="radio" name="genero" value="F"> Feminino
+
+<input type="file" name="arquivo">
+
+<input type="submit" value="Enviar">
+
+validação de formulários
+required: Campo obrigatório.
+
+minlength="x": Mínimo de caracteres permitidos.
+
+maxlength="x": Máximo de caracteres permitidos.
+
+pattern="[A-Za-z]{3,}": Expressão regular para validar o formato.
+
+<input type="text" name="nome" required minlength="3" maxlength="20">
+<input type="email" name="email" required>
+<input type="password" name="senha" required pattern="[A-Za-z0-9]{6,}">
+Tipos mais comuns: text, email, password, submit, radio, checkbox, file, etc
+
+<textarea>: Área de texto para múltiplas linhas
+
+<button>: Botão clicável
+
+<label>: Rotula um campo do formulário
+
+<select>: Caixa de seleção (dropdown)
+
+<select id="cidade" name="cidade">
+    <option value="SP">São Paulo</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="MG">Minas Gerais</option>
+</select>
+<option>: Opções dentro de <select>
+
+<fieldset>: Agrupa elementos do formulário
+
+<legend>: Adiciona uma legenda para o
+
+Criação de formulários básicos:
+<form action="/enviar" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    
+    <button type="submit">Enviar</button>
+</form>
+Principais elementos: <input>, <textarea>, <button>, <select>, <option>
