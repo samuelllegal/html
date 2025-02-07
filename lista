@@ -1,0 +1,51 @@
+Listas:
+Ordenada: <ol type="A">
+
+1 (padrão) → 1, 2, 3...
+
+A → A, B, C...
+
+a → a, b, c...
+
+I → I, II, III...
+
+i → i, ii, iii...
+
+<ol>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+Não ordenada: <ul style="list-style-type: disc;">
+
+disc (padrão) → ●
+
+circle → ○
+
+square → ■
+
+none → Remove os marcadores.
+
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+Itens: <li>
+
+Define a lista: <dl>
+
+Define o termo: <dt>
+
+Define a descrição do termo: <dd>
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para criar páginas web.</dd>
+
+    <dt>CSS</dt>
+    <dd>Linguagem para estilizar páginas web.</dd>
+
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para tornar as páginas interativas.</dd>
+</dl>
